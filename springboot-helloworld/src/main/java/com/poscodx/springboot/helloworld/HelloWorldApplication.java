@@ -10,7 +10,6 @@ import org.springframework.context.ConfigurableApplicationContext;
  */
 @SpringBootApplication
 public class HelloWorldApplication {
-	
 	public static void main(String[] args) {
 		/**
 		 * 	SpringApplication.run(...) 안에서 일어나는 일: Bootstrap
@@ -24,7 +23,6 @@ public class HelloWorldApplication {
 		 *  5. ApplicationRunner 인터페이스를 구현한 빈을 Application Context에서 찾아서 실행
 		 */
 		try(ConfigurableApplicationContext ac =	SpringApplication.run(HelloWorldApplication.class, args)){}
-		
 //		ApplicationContext ac = null;
 //		try {
 //			ac = SpringApplication.run(HelloWorldApplication.class, args);
